@@ -1,0 +1,11 @@
+$color-blue: blue;
+$color-red: red;
+
+body {
+  background-color: red;
+  font-size: 14px;
+}
+#box {
+  color: $color-blue;
+  background-color: $color-red;
+}
