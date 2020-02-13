@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,KAAK,CAAC;ECDJ,SAAS,EDEgB,IAAI;ECD7B,gBAAgB,EDCe,KAAK;CACrC",
+    "sources": [
+        "../sass/test.scss",
+        "../sass/_mixins.scss"
+    ],
+    "names": [],
+    "file": "test.css"
+}

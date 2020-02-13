@@ -1,0 +1,58 @@
+//변수
+$color-white: #fff;
+$color-black: #000;
+$color-grey: #ccc;
+$color-grey-light: #efefef;
+$color-red: #f00;
+$color-blue: #00f;
+
+$border-color: $color-blue;
+
+//mixin
+@mixin boxSize($width, $height, $padding) {
+  width: $width;
+  height: $height;
+  padding: $padding;
+}
+@mixin pos-abs-center() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin pos-abs-center-horizontal() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin pos-abs-center-vertical() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+body {
+  margin: 0;
+  background-color: $color-grey-light;
+  font-family: sans-serif;
+}
+
+.box {
+  @include boxSize(300px, 300px, 20px);
+  @include pos-abs-center();
+  &,
+  &-inner {
+    border: 3px solid $border-color;
+  }
+
+  &-inner {
+    @include boxSize(initial, 40px, 10px);
+    background-color: $color-grey;
+
+    &-title {
+      font-size: 20px;
+      color: $color-white;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
