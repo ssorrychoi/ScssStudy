@@ -1,0 +1,23 @@
+.box-parent {
+  padding: 20px;
+  background-color: black;
+}
+
+.box-parent .box-child {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border: 1px solid #ff0;
+  float: left;
+}
+
+.box-parent .box-child:not(:last-child) {
+  margin-right: 20px;
+}
+
+.box-parent::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+/*# sourceMappingURL=pseudo.css.map */
