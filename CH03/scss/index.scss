@@ -1,6 +1,9 @@
-@import "./base/base";
 @import "./abstract/variables";
+@import "./abstract/mixins";
+
+@import "./base/base";
 @import "./base/animate";
+
 @import "./layout/header";
 @import "./layout/main";
 @import "./layout/footer";

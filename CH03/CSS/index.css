@@ -148,4 +148,51 @@ header #header-text-sub {
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
+
+footer {
+  background-color: #3f4a56;
+  color: #b9b9b9;
+  padding: 9rem 7rem 3rem 7rem;
+}
+
+footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer #logo-text-footer {
+  float: left;
+  width: 25%;
+  font-size: 4rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+footer #copyright {
+  float: left;
+  width: 75%;
+  font-size: 1.2rem;
+}
+
+footer #copyright p:nth-child(1) {
+  margin-bottom: 2rem;
+  word-break: break-all;
+  text-align: justify;
+  -webkit-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  -webkit-column-rule-style: dashed;
+          column-rule-style: dashed;
+  -webkit-column-rule-width: 1px;
+          column-rule-width: 1px;
+  -webkit-column-rule-color: #888;
+          column-rule-color: #888;
+}
+
+footer #copyright p:last-child {
+  margin-bottom: 4rem;
+}
 /*# sourceMappingURL=index.css.map */
