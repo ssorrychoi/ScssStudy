@@ -3,7 +3,12 @@
 
 @import "./base/base";
 @import "./base/animate";
+@import "./base/typo";
+@import "./base/utilities";
 
 @import "./layout/header";
 @import "./layout/main";
 @import "./layout/footer";
+
+@import "./components/button";
+@import "./components/nav";

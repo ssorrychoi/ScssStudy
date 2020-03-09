@@ -3,7 +3,9 @@ footer {
   color: $color-grey-light;
   padding: 9rem 7rem 3rem 7rem;
   @include clearfix();
-
+  @include mq("small-screen-3") {
+    padding: 9rem 2rem 3rem 7rem;
+  }
   #logo-text-footer {
     float: left;
     width: 25%;
@@ -11,12 +13,21 @@ footer {
     font-family: "Lato", sans-serif;
     font-weight: 100;
     text-transform: uppercase;
+
+    @include mq("small-screen-3") {
+      margin-right: 6rem;
+      width: 20%;
+    }
   }
 
   #copyright {
     float: left;
     width: 75%;
     font-size: 1.2rem;
+
+    @include mq("small-screen-3") {
+      width: 60%;
+    }
 
     p:nth-child(1) {
       margin-bottom: 2rem;
